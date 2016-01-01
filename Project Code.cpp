@@ -3,7 +3,8 @@
 // Course(s)    : 	MTE100, GENE121
 // Date Created : 	November 24, 2015
 // Description  : 	This program controls the LEGO NXScannerT. It is a 
-//	 			robot which autonomously scans a book using an //				attached phone running CamScanner. 
+//	 				robot which autonomously scans a book using an 
+//					attached phone running CamScanner. 
 
 
 void pushForward(); 
@@ -19,14 +20,15 @@ void fixJam();
 bool isFinish();
 
 /** Detects if a page is jammed (cannot lay flat because 
-	it's been caught on page pushing motor or flipping arm) 
-by TAMIM**/
+	it's been caught on page pushing motor or flipping arm)
+	By Tamim **/
 bool isPageJam()
 {
 	return (SensorValue[S1]<28);
 }
 
-// Plays error sound to alert user about a page jam. By Tamim and Fernando
+// Plays error sound to alert user about a page jam. 
+// By Tamim and Fernando
 void errorSound()
 {
 	playTone(440, 30);
@@ -37,7 +39,8 @@ void errorSound()
 	wait10Msec(160);
 }
 
-// Prompts user to fix page jam. By Tianyu
+// Prompts user to fix page jam. 
+// By Tianyu
 void fixJam()
 {
 	// Verify motors are stopped
@@ -52,7 +55,8 @@ void fixJam()
 	while(nNxtButtonPressed== -1){} // wait for user to fix
 }
 
-// Uses page flipping arm to "turn" each page. By Fernando.
+// Uses page flipping arm to "turn" each page. 
+// By Fernando
 void turnPage()
 {
 	nMotorEncoder[motorB] = 0;
@@ -63,7 +67,8 @@ void turnPage()
 }
 
 /** Rotates phone left and right to take a picture of 
-each page. Please refer to flowchart for more detailed visualization. By Tianyu, Sally, and Tamim.**/
+each page. Please refer to flowchart for more detailed visualization. 
+By Tianyu, Sally, and Tamim **/
 void takePhoto(int right, int left)
 {
 	int initPosition = nMotorEncoder[motorB];
@@ -112,13 +117,15 @@ void takePhoto(int right, int left)
 }
 
 /** Determines if the book has been finished; coloured square has been
- 	placed right after the last page to be flipped. By Tamim.**/
+ 	placed right after the last page to be flipped. 
+ 	By Tamim**/
 bool isFinish ()
 {
 	return SensorValue[S4] == 5;
 }
 
-
+// Main loop
+// By Sally
 task main()
 {
 	// Setup sensors
