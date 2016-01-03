@@ -1,10 +1,10 @@
 # About Project NXScannerT
 
-Design Problem Definition
+>- Design Problem Definition
 
 Back strain is a reality for many university students. According to Jacobs [3], approximately 85% of university students experience discomfort and pain due to backpack usage. The most frequent anatomical zones of discomfort are the shoulder, lower back, upper middle back, and neck. The recommended weight of a backpack is no more than 10-15% of a student’s body weight [1]. However, the average weight of a single textbook is around 3.5 pounds, which is significant [2]. In contrast, the weight of the average laptop is around 5 pounds [2]. Carrying multiple notebooks and loaded binders during the school day can be tiresome and extraneous. As the number of courses increases, the amount of material to transport can become quite substantial. This heavy load for a student to carry can be a chronic stress to the body, causing discomfort and pain.
 
-Goals and Objectives
+>- Goals and Objectives
 
 The goal of this project is to construct a robot, the NXScannerT, which parses a book or set of notes and converts each page to an electronic copy. This robot design is practical for all students--especially for those who may have physical conditions further inconveniencing the transport of numerous physical documents. 
 
