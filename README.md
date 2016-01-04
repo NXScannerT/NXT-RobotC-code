@@ -1,5 +1,8 @@
 # About Project NXScannerT
 
+>NXScannerT is an open-source robotic book scanner that is built with lego Mindstorm. It has robot arms to flip pages of the book and the mechanism to turn the phone camera to face left and right page of the book as well as press the smartphone camera button. With built-in Sensors, it is able to detect page jam and fix it with robot arm or notify users to fix.
+The project's initial prototype was built at Enghack and was later being improved. Here is the link to the prototype on Hackthon: http://devpost.com/software/scan-go-pshtd0
+
 **Design Problem Definition**
 ---------------------
 
